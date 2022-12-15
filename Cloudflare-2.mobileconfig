@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>PayloadContent</key>
+<array>
+<dict>
+<key>DNSSettings</key>
+<dict>
+<key>DNSProtocol</key>
+<string>TLS</string>
+<key>ServerAddresses</key>
+<array>
+<string>2606:4700:4700::1111</string>
+<string>2606:4700:4700::1001</string>
+<string>1.1.1.1</string>
+<string>1.0.0.1</string>
+</array>
+<key>ServerName</key>
+<string>1dot1dot1dot1.cloudflare-dns.com</string>
+</dict>
+<key>OnDemandRules</key>
+<array>
+<dict>
+<key>Action</key>
+<string>Connect</string>
+<key>InterfaceTypeMatch</key>
+<string>WiFi</string>
+</dict>
+<dict>
+<key>Action</key>
+<string>Connect</string>
+<key>InterfaceTypeMatch</key>
+<string>Cellular</string>
+</dict>
+<dict>
+<key>Action</key>
+<string>Disconnect</string>
+</dict>
+</array>
+<key>PayloadDescription</key>
+<string>Configures device to use Cloudflare-2 Encrypted DNS over TLS</string>
+<key>PayloadDisplayName</key>
+<string>Cloudflare-2 DNS over TLS</string>
+<key>PayloadIdentifier</key>
+<string>com.apple.dnsSettings.managed.b75e37df-ef1a-4cf1-8644-bbffc4771b36</string>
+<key>PayloadType</key>
+<string>com.apple.dnsSettings.managed</string>
+<key>PayloadUUID</key>
+<string>c665da33-a363-48df-bb35-99c1ce01ff38</string>
+<key>PayloadVersion</key>
+<integer>1</integer>
+<key>ProhibitDisablement</key>
+<false/>
+</dict>
+</array>
+<key>PayloadDescription</key>
+<string>Adds different encrypted DNS configurations to Big Sur and iOS 14 based systems</string>
+<key>PayloadDisplayName</key>
+<string>Encrypted DNS (DoH, DoT)</string>
+<key>PayloadIdentifier</key>
+<string>com.notjakob.apple-dns.bf04bf9a-9b3c-4ab7-8aa1-b770aa7f7704</string>
+<key>PayloadRemovalDisallowed</key>
+<false/>
+<key>PayloadType</key>
+<string>Configuration</string>
+<key>PayloadUUID</key>
+<string>86f5cf34-1ba9-4e10-a0be-9d6654436582</string>
+<key>PayloadVersion</key>
+<integer>1</integer>
+</dict>
+</plist>
